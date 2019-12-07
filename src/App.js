@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header/Header';
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
@@ -43,6 +44,8 @@ class App extends Component {
     });
   };
 
+  // features
+
   render() {
     const features = Object.keys(this.props.features).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
@@ -75,6 +78,8 @@ class App extends Component {
       );
     });
 
+    // summary 
+
     const summary = Object.keys(this.state.selected).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
       const selectedOption = this.state.selected[feature];
@@ -97,9 +102,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header>
-          <h1>ELF Computing | Laptops</h1>
-        </header>
+        <Header />
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>

@@ -1,0 +1,20 @@
+Components:
+
+                                            App
+
+                 Header                  Customize                  Cart      
+
+                                                                CartItem   CartTotal
+
+
+
+
+1. Customize must pass selectProcessor, selectOperating System, selectVideo Card, and selectDisplay 
+as callback props to App to change State. 
+
+2. State from App must pass Processor (name and cost), Operating System (name and cost), 
+Video Card (name and cost), and Display (name and cost) to Cart.
+
+3. Inside Cart, must loop through array of items and render a CartItem for each item. 
+
+4. Inside Cart, must pass selected item cost to CartTotal to be calculated and rendered.
